@@ -1,0 +1,161 @@
+.container {
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 22.5rem;
+  border-radius: 16px;
+
+  box-shadow: hsla(240, 5%, 41%, 0.2) 0px 7px 29px 0px;
+}
+
+.product-card__img {
+  margin-bottom: 8px;
+  border-radius: 16px 16px 0 0;
+
+  overflow: hidden;
+}
+
+.product-card__img img {
+  width: 22.5rem;
+  height: 13.5em;
+  object-fit: cover;
+}
+
+.product-card__content {
+  padding: 24px;
+}
+.product-card__name-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-card__name {
+  margin: 0;
+
+  & > p {
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+
+    color: #081f32;
+  }
+}
+
+.product-card__attribute {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+
+  & > p {
+    margin: 0;
+  }
+}
+
+.product-card__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 9px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background-color: #ffc22b;
+
+  &:nth-child(2) {
+    background-color: #f8593b;
+  }
+
+  & img {
+    max-width: 14px;
+    max-height: 14px;
+  }
+}
+
+.product-card__description {
+  margin-top: 24px;
+
+  & p {
+    color: #6e798c;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    line-height: 25px;
+    text-align: left;
+  }
+}
+
+.product-card__element {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+
+  & > p {
+    margin: 0;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a5adbb;
+  }
+
+  & > p:last-child {
+    margin-left: auto;
+  }
+
+  & > p:not(:first-child):not(:last-child) {
+    margin-left: auto;
+  }
+}
+
+.product-card__price-group {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+
+  & > .product-card__price {
+    display: flex;
+    align-items: center;
+
+    & .current-price {
+      margin: 0;
+
+      font-family: 'DM Serif Display';
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 25px;
+    }
+
+    & .old-price {
+      margin: 0;
+      padding-left: 8px;
+
+      font-family: 'DM Serif Display';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+
+      text-decoration: line-through;
+
+      color: #f8593b;
+    }
+  }
+
+  & > .product-card__order-button {
+    margin-left: auto;
+  }
+}

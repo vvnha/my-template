@@ -1,0 +1,46 @@
+[type='button'] {
+  position: relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  width: 100%;
+
+  background-color: transparent;
+  border: 2px solid #2978b5;
+  color: #2978b5;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+
+  transition: background-color 0.2s linear;
+}
+
+[type='button']:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+[type='button']:active {
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 5px -3px,
+    rgb(0 0 0 / 14%) 0px 8px 10px 1px, rgb(0 0 0 / 12%) 0px 3px 14px 2px;
+}
+
+[type='button']:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+
+  background-color: #2978b5;
+
+  transition: right 0.2s ease-in-out;
+  z-index: -1;
+}
+
+[type='button']:hover::before {
+  right: 0;
+}
